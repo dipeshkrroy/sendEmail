@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.0/css/font-awesome.css" integrity="sha512-CB+XYxRC7cXZqO/8cP3V+ve2+6g6ynOnvJD6p4E4y3+wwkScH9qEOla+BTHzcwB4xKgvWn816Iv0io5l3rAOBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="card">
+                <div class="form">
+                    <form onsubmit="event.preventDefault();sendEmail()" name="mail">
+                        <h2>Contact us</h2>
+                        <p>Please free to reach out to us:</p>
+                        <div>
+                            <input type="text" name="name" placeholder="Your name" />
+                        </div>
+                        <div>
+                            <input type="email" name="email" placeholder="Your email" />
+                        </div>
+                        <div>
+                            <textarea name="message" placeholder="Your message"></textarea>
+                        </div>
+                        <div>
+                            <button type="submit">Send</button>
+                        </div>                        
+                    </form>
+                </div>
+                <div class="contact">
+                    <h2>About Us</h2>
+                    <div>
+                        <i class="fa fa-map-marker" aria-hidden="true"></i><span>House no. 73, Haripriya Lifestyle, Bangalore-560100</span>
+                    </div>
+                    <div>
+                        <i class="fa fa-envelope" aria-hidden="true"></i><span>dipeshkrroy@gmail.com</span>
+                    </div>
+                    <div>
+                        <i class="fa fa-twitter-square" aria-hidden="true"></i><span>@dipeshkrroy</span>
+                    </div>
+                    <div>
+                        <i class="fa fa-mobile" aria-hidden="true"></i><span>+91 9535 613 323</span>
+                    </div>
+                    <div class="icons">
+                        <i class="fa fa-github-square fa-2x" aria-hidden="true"></i>
+                        <i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i>
+                        <i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="circle" id="chatbtn">
+        DK
+    </div>
+    <div class="chat" id="chat">
+        <h2><i class="fa fa-user" aria-hidden="true"></i> Chat with us</h2>
+        <input type="text" name="msg" placeholder="Your message" />
+    </div>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
